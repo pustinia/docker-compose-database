@@ -6,7 +6,9 @@ However, the Oracle official page was down(This product is no longer maintained 
 and will be removed in the future~~) in dockerhub and the official Oracle database image was nowhere to be found.  
 So I write down the process of creating an oracle docker image on there official github.  
 It's a story that I thought it would end quickly, but it didn't.  
-이미지 - dockerhub
+
+![image](https://user-images.githubusercontent.com/17061046/218296727-54e91a44-ca41-4542-8fea-deada59d9f60.png)
+
 
 ### 1. Go to the Oracle's official githb, and clone my local desktop.(windows11)
 ```
@@ -49,7 +51,9 @@ buildContainerImage.sh
  
 ### 7. Search that file, and download.
 I found [oracledownload](https://www.oracle.com/database/technologies/oracle19c-linux-downloads.html) page. and click 'LINUX.X64_193000_db_home.zip' file download.
-이미지 - download
+
+![image](https://user-images.githubusercontent.com/17061046/218296749-0de8e902-e8d2-4eb2-960f-53b460050012.png)
+
 
 ### 8. Hum.. need to login Oracle. What was my account and password...
 Log in with email authentication and download... It's not easy.  
@@ -150,7 +154,7 @@ services:
     container_name: oracle-19c
     environment:
       - ORACLE_SID=ORCLCDB       # SID that should be used (default: ORCLCDB).
-      - ORACLE_PWD=admin         # SYS, SYSTEM and PDB_ADMIN password. need to be change
+      - ORACLE_PWD=admin         # SYS, SYSTEM and PDB_ADMIN password.
       - ORACLE_PDB=ORCLPDB1      # PDB name that should be used (default: ORCLPDB1).
       - ORACLE_EDITION=enterprise
       - ORACLE_CHARACTERSET=AL32UTF8
@@ -167,4 +171,6 @@ volumes:
 ```
 
 ### 14. finally, Dbeaver setting to login the oracle.
+- Dont forget to change the password !!!!  
+![image](https://user-images.githubusercontent.com/17061046/218296765-9e993ebb-9f26-4a4a-ac4b-0da9239d2002.png)
 

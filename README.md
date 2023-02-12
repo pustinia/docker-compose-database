@@ -132,7 +132,7 @@ oracle-19c  | #########################
 ```
 
 ### 13. Other few things.
-- Make sure your .wslconfig file. (windows)
+- Make sure your .wslconfig file before you build the oracle docker image. (windows)
 - It's recommend 4GB+ memory, 100GB swap size for docker builds.
 ```
 [wsl2]
@@ -141,9 +141,9 @@ processors=2
 swap=100GB
 localhostForwarding=true
 ```
-- for this memory [issue](https://github.com/oracle/docker-images/issues/458#issuecomment-381359844),  
+- For this memory [issue](https://github.com/oracle/docker-images/issues/458#issuecomment-381359844),  
   It is good to add shared memory setting in docker comopse file.
-- final docker-compose.yml is.....
+- The final docker-compose.yml is.....
 
 ```
 version: '3.5'

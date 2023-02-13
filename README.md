@@ -174,3 +174,21 @@ volumes:
 - Dont forget to change the password !!!!  
 ![image](https://user-images.githubusercontent.com/17061046/218296765-9e993ebb-9f26-4a4a-ac4b-0da9239d2002.png)
 
+
+### 15. If you want to download 'LINUX.X64_193000_db_home.zip' file directly on linux server?
+- first, you go to your descktop pc, and login the Oracle homepage.
+- go to this [page](https://www.oracle.com/database/technologies/oracle19c-linux-downloads.html) and Press F12 key in Chrom
+- and click download, Let's see which request is..
+```
+# xxxxxxx means, AuthParam it should be changed in your param.
+https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_db_home.zip?AuthParam=xxxxxxx
+```
+- and copy that, go back to your linux server and use wget command.
+```
+- and click download, Let's see which request is..
+```
+sudo wget -O LINUX.X64_193000_db_home.zip  https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_db_home.zip?AuthParam=xxxxxxx
+```
+
+
+

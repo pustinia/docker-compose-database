@@ -184,11 +184,11 @@ volumes:
 https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_db_home.zip?AuthParam=xxxxxxx
 ```
 - and copy that, go back to your linux server and use wget command.
-```
-- and click download, Let's see which request is..
+- and click download, Let's see which request it is.. hum.. It should be possible to get this request.
 ```
 sudo wget -O LINUX.X64_193000_db_home.zip  https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_db_home.zip?AuthParam=xxxxxxx
 ```
+- And All of process is same with window. Good.
 
 
 
